@@ -24,7 +24,6 @@ function App() {
                <Route path="about-us" element={<Navigate to="/about" replace />} />
                <Route path="posts" element={<BlogPage />} />
                <Route path="posts/:id" element={<SinglePage />} />
-               <Route path="posts/new" element={<CreatePost />} />
                <Route path="posts/:id/edit" element={<EditPost />} />
                <Route
                   path="posts/new"

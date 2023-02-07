@@ -27,7 +27,9 @@ const BlogPage = () => {
    return (
       <div>
          <h1>Our news</h1>
-         <Link to='/posts/new'>Add new post</Link>
+         <Link to="/posts/new" style={{ margin: '1rem 0', display: 'inline-block' }}>
+            Add new post
+         </Link>
          {posts.map((post) => (
             <Link key={post.id} to={`/posts/${post.id}`}>
                <li>{post.title}</li>
